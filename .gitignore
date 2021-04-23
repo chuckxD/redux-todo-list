@@ -40,4 +40,5 @@ packages/react-devtools-scheduling-profiler/dist
 .cache/
 node_modules/
 dist/
+package-lock.json
 
