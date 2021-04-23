@@ -1,0 +1,78 @@
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import 'fontawesome.scss';
+
+:root {
+  font: 600 16px 'Open Sans', sans-serif;
+}
+
+body {
+  background: rgb(192, 192, 192);
+}
+
+.app-container {
+  min-height: 100vh;
+  max-width: 730px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  bottom: 30px;
+}
+
+.todo-app {
+  background-color: rgb(225, 225, 225);
+  border-radius: 14px 14px 0 0;
+  padding: 14px 0;
+  box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.todo-list__item {
+  cursor: pointer;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-sizing: content-box;
+  padding: 32px 0;
+  box-shadow: 0 1px 0 0 #e6e6e6, 0 2px 0 0 #fff;
+}
+
+.todo-list__item--completed {
+  // text-decoration: line-through;
+  &:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-weight: 200;
+  }
+}
+
+.todo-list__item--active {
+  text-decoration: none;
+  &:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 200;
+  }
+}
