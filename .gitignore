@@ -1,6 +1,4 @@
-node_modules
 .DS_STORE
-node_modules
 scripts/flow/*/.flowconfig
 .flowconfig
 *~
@@ -39,4 +37,7 @@ packages/react-devtools-inline/dist
 packages/react-devtools-shell/dist
 packages/react-devtools-scheduling-profiler/dist
 
-.cache/**
+.cache/
+node_modules/
+dist/
+
